@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reeksamen</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="myscript.js"></script>
+
+</head>
+  <body>
+    <header>
+
+      <h1> Seværdigheder - Kolding</h1>
+    </header>
+    <div class="topnav">
+    <a href="index.html">Forside</a>
+    <a href="skamlingsbanken.html">Skamlingsbanken</a>
+    <a href="hotel.html">Hotel Koldingfjord</a>
+    <a class="active" href="koldinghus.html">Koldinghus</a>
+    <a href="trapholt.html">Trapholt Museum</a>
+    <a href="geografisk_have.html">Geografisk Have</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="galleri.html">Galleri</a>
+  </div>
+
+  <p>Koldinghus er et kongeslot i Kolding, som blev grundlagt midt i 1200-tallet. Det brændte i 1808 og stod længe som en ruin, inden en langvaring restaurering blev igangsat. Både slottet, selve restaureringen og museet på Koldinghus er i dag seværdigheder.
+
+Fra voldanlægget omkring slottet er der udsigt over byen og Slotssøen. Tårnet er 75 meter højt fra udsigtsplatformen ned til Slotssøen.[kilde mangler]
+
+Koldinghus administreres af Museet på Koldinghus, der blev oprettet i 1890[1]. Museet har udstillinger om slottets historie og restaurering samt skiftende særudstillinger.
+
+I anledningen af Koldinghus 750-års jubilæum, besøger Hendes Majestæt Dronning Margrethe, Hendes Kongelige Højhed Prinsesse Benedikte og Hendes Majestæt Anne-Marie den 5. maj 2018 slottet og åbningen af udstillingen "Magtens smykker".
+</p>
+
+<div class="jquery"
+<div id="tiljs">
+  <!-- Kode brugt fra https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_hide_show -->
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+  $(".javascripttekst").hide();
+      });
+  $("#show").click(function(){
+  $(".javascripttekst").show();
+});
+});
+</script>
+
+<div class="javascripttekst">
+<p>Koldingfjord hotel A/S<br>
+Telefon: +45 75 51 00 00<br>
+E-mail: hotel@Koldingfjord.dk
+</p>
+</div>
+<button id="hide">Skjul</button>
+<button id="show">Kontakt</button>
+</div>
+
+<aside>
+<img src="img/koldinghus.png" alt="Koldinghus" style="height:300px;width:400px;">
+</aside>
+
+
+
+
+
+
+
+
+  </body>
+</html>

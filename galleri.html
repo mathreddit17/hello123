@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reeksamen</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="myscript.js"></script>
+
+</head>
+  <body>
+    <header>
+
+      <h1> Seværdigheder - Kolding</h1>
+    </header>
+    <div class="topnav">
+    <a href="index.html">Forside</a>
+    <a href="skamlingsbanken.html">Skamlingsbanken</a>
+    <a href="hotel.html">Hotel Koldingfjord</a>
+    <a href="koldinghus.html">Koldinghus</a>
+    <a href="trapholt.html">Trapholt Museum</a>
+    <a href="geografisk_have.html">Geografisk Have</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a class="active" href="galleri.html">Galleri</a>
+  </div>
+
+
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <br /><br />
+    <img src="img/sdukolding.png" alt="SDU Kolding" style="width:100%;">
+    <div class="text">SDU Kolding</div>
+  </div>
+
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <br /><br />
+    <img src="img/billede2.png" alt="Slotsøen" style="width:100%;">
+    <div class="text">Slotsøen</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <br /><br />
+    <img src="img/billede3.png" alt="Kolding Miniby" style="width:100%;">
+    <div class="text">Kolding Miniby</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <br /><br />
+    <img src="img/billede4.png" alt="Havnen i Kolding" style="width:100%;">
+    <div class="text">Havnen i Kolding</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <br /><br />
+    <img src="img/billede5.png" alt="Hyggelig gade i Kolding" style="width:100%;">
+    <div class="text">Hyggelig gade i Kolding</div>
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

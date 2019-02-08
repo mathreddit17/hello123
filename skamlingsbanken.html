@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reeksamen</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="myscript.js"></script>
+
+</head>
+  <body>
+    <header>
+
+      <h1> Seværdigheder - Kolding</h1>
+    </header>
+    <div class="topnav">
+    <a href="index.html">Forside</a>
+    <a class="active" href="skamlingsbanken.html">Skamlingsbanken</a>
+    <a href="hotel.html">Hotel Koldingfjord</a>
+    <a href="koldinghus.html">Koldinghus</a>
+    <a href="trapholt.html">Trapholt Museum</a>
+    <a href="geografisk_have.html">Geografisk Have</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="galleri.html">Galleri</a>
+  </div>
+  
+  <p>Skamlingsbanken er en 2-3 km lang randmoræne i Sydjylland mellem Kolding og Hejlsminde. Dens top Højskamling, hvorfra man kan se langt ud over det meget kuperede område, var med sine 113 m o.h. det højeste punkt i det historiske Sønderjylland.[1][2] Banken ligger i Vejstrup Sogn, som hørte til Hertugdømmet Slesvig, men var et af dem, der ved fredsslutningen efter krigen i 1864 blev indlemmet i Kongeriget Danmark. Sognet kom således ikke under preussisk styre frem til Genforeningen i 1920 og hører derfor ikke til Sønderjylland efter den nutidige definition.
+Siden 1843 har Skamlingsbanken været ramme om en række store folkemøder. Mange fremtrædende personer har holdt taler her, bl.a. N.F.S. Grundtvig, Laurids Skau og Orla Lehmann. Siden 1998 er der afholdt årlige gratis operakoncerter med op til 30.000 tilhørere.
+</p>
+
+
+<div class="jquery"
+<div id="tiljs">
+  <!-- Kode brugt fra https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_hide_show -->
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+  $(".javascripttekst").hide();
+      });
+  $("#show").click(function(){
+  $(".javascripttekst").show();
+});
+});
+</script>
+
+<div class="javascripttekst">
+<p>Koldingfjord hotel A/S<br>
+Telefon: +45 75 51 00 00<br>
+E-mail: hotel@Koldingfjord.dk
+</p>
+</div>
+<button id="hide">Skjul</button>
+<button id="show">Kontakt</button>
+</div>
+
+<aside>
+<img src="img/skamlingsbanken.png" alt="Skamlingsbanken" style="height:300px;width:400px;">
+</aside>
+
+
+
+  </body>
+</html>

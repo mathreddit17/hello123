@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reeksamen</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="myscript.js"></script>
+
+</head>
+  <body>
+    <header>
+
+      <h1> Seværdigheder - Kolding</h1>
+    </header>
+    <div class="topnav">
+    <a href="index.html">Forside</a>
+    <a href="skamlingsbanken.html">Skamlingsbanken</a>
+    <a href="hotel.html">Hotel Koldingfjord</a>
+    <a href="koldinghus.html">Koldinghus</a>
+    <a href="trapholt.html">Trapholt Museum</a>
+    <a class="active" href="geografisk_have.html">Geografisk Have</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="galleri.html">Galleri</a>
+  </div>
+
+  <p>Geografisk Have er en 12 hektar stor, botanisk have i Kolding, hvor det geografiske relaterer sig til, at træer, buske og urter er plantet sammen efter oprindelsesland. Haven opstod først som planteskole da Aksel Olsen, som i 1917, efter en veloverstået læretid i danske såvel som i tyske planteskoler, købte et område kaldet "Sibirien", som var et 14 tønder stort land op til forbindelsesvejen mellem Vonsild og Tved i Koldings sydøstlige del. Aksel Olsen både hørte og læste om de mange nye blomster og plantearter man opdagede i Østasien og han importerede disse i hundredvis. Efterhånden som haven blev større og større fik han den idé, at dele haven op i geografiske områder. Der findes afdelinger for Nordamerika, Japan, Kina, Sydamerika, Manchuriet, Korea, Sibirien og Sydvestasien.
+  </p>
+
+  <div class="jquery"
+  <div id="tiljs">
+    <!-- Kode brugt fra https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_hide_show -->
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+    $(".javascripttekst").hide();
+        });
+    $("#show").click(function(){
+    $(".javascripttekst").show();
+});
+});
+</script>
+
+<div class="javascripttekst">
+<p>Koldingfjord hotel A/S<br>
+Telefon: +45 75 51 00 00<br>
+E-mail: hotel@Koldingfjord.dk
+</p>
+</div>
+<button id="hide">Skjul</button>
+<button id="show">Kontakt</button>
+  </div>
+
+  <aside>
+  <img src="img/geografisk.png" alt="Geografisk have" style="height:300px;width:400px;">
+  </aside>
+
+  </body>
+</html>
